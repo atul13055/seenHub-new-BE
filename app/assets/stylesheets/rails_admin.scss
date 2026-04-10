@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+// Bootswatch Materia for RailsAdmin
+
+/***  Variables & mixins ***/
+@import "rails_admin/src/rails_admin/styles/base/variables";
+@import "rails_admin/src/rails_admin/styles/base/mixins";
+
+/***  Libraries  ***/
+@import "flatpickr/dist/flatpickr";
+
+/*** Font-awesome ***/
+$fa-font-path: "~@fortawesome/fontawesome-free/webfonts" !default;
+@import "@fortawesome/fontawesome-free/scss/solid";
+@import "@fortawesome/fontawesome-free/scss/fontawesome";
+
+/***  Bootstrap + Bootswatch Materia  ***/
+@import "bootswatch/dist/materia/variables";
+@import "bootstrap/scss/bootstrap";
+@import "bootswatch/dist/materia/bootswatch";
+
+/***  RailsAdmin  ***/
+@import "rails_admin/src/rails_admin/styles/base/theming";
+@import "rails_admin/src/rails_admin/styles/filtering-select";
+@import "rails_admin/src/rails_admin/styles/filtering-multiselect";
+@import "rails_admin/src/rails_admin/styles/widgets";
